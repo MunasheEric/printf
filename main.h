@@ -7,18 +7,13 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/**
- * struct format - converter for printf
- * @ph: type char pointer of the specifier
- * @function: function for the conversion specifier
- *
- */
-typedef struct format
-{
-		char *ph;
-			int (*function)();
-} convert;
-
 int _printf(const char *format, ...);
-int print_int(va_list types, char buffer[], int flags, int width, int precision, int size);
+int _strlen(char *s);
+int output_decimal(va_list args);
+int _putchar(char c);
+void output_integer(const char *separator, const unsigned int n, ...);
+int  display_string(const char *s, const unsigned int n, ...);
+char *output_rot13(char *s);
+void rev_string(char *s);
+
 #endif
