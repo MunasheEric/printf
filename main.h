@@ -11,9 +11,9 @@ int _printf(const char *format, ...);
 int _strlen(char *s);
 int output_decimal(va_list args);
 int _putchar(char c);
-void output_integer(const char *separator, const unsigned int n, ...);
-int  display_string(const char *s, const unsigned int n, ...);
-char *output_rot13(char *s);
+void print_integer(const char *separator, const unsigned int n, ...);
+int  print_string(const char *s, const unsigned int n, ...);
+char *print_rot13(char *s);
 void rev_string(char *s);
 
 #endif
