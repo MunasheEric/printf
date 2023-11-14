@@ -16,7 +16,9 @@ typedef struct arrange
 	int (*function)(va_list arg);
 } arrange;
 
+void print_rev(char *s);
 int _printf(const char *format, ...);
 int print_string(va_list list);
+int _printf(const char *format, ...);
 
 #endif
